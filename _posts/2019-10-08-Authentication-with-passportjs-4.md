@@ -1,0 +1,9 @@
+---
+coverImg: /assets/images/workflow.jpg
+categories: [javascript]
+---
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Totam, quibusdam quae? Debitis sapiente dignissimos et quasi
+laborum obcaecati, esse doloremque magnam ea minus ad iste
+nisi distinctio quo sequi eos.
