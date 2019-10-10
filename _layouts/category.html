@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="row">
+  <div class="col">
+    <h2 class="mb-4">Danh mục: {{ page.name }}</h2>
+
+    <div class="wrapper">
+      {% for post in site.categories[page.name] %}
+      {% include article_item.html post=post %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

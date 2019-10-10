@@ -1,0 +1,23 @@
+{% assign post = include.post %}
+<div class="custom-card card">
+  <div class="row no-gutters">
+    <div class="col-4">
+      <a href="{{ post.url }}" class="post-img">
+        <img src="{{ post.coverImg }}" class="card-img" alt="{{ post.title }}">
+      </a>
+    </div>
+    <div class="col">
+      <div class="card-body card-content">
+        <h4 class="card-title post-title">
+          <a href="{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h4>
+        <div class="card-text post-summary">{{ post.excerpt }}</div>
+        <p class="card-text post-date">
+          <small class="text-muted">{{ post.date | date: "%d/%m/%Y" }}</small>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+{% assign info = site.data.about_me %}
+<div id="header">
+  <div class="about-me">
+    <div class="author-image">
+      <a href="/">
+        <img src="{{ info.avatar }}" alt="Author image" title="Author image">
+      </a>
+    </div>
+    <div class="author-name">{{ info.name }}</div>
+    <p>{{ info.intro }}</p>
+  </div>
+
+  <div class="contact">
+    <h3 class="d-none d-md-block">Liên hệ</h3>
+    <div class="list-social-icons">
+      <ul>
+        <li>
+          <a class="icon-link" href="{{ info.facebook }}">
+            <i class="icon fa fa-facebook" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon-link" href="{{ info.github }}">
+            <i class="icon fa fa-github" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon-link" href="mailto:{{ info.email }}">
+            <i class="icon fa fa-envelope-o" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="copy-right d-none d-md-block">Copyright 2019 &copy; Đỗ Minh Hiếu</div>
+  </div>
+</div>

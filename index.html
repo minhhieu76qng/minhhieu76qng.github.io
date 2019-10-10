@@ -1,0 +1,12 @@
+---
+title: Trang chủ
+layout: default
+---
+
+<!-- display all category -->
+{% include list_category.html list_category=site.category%}
+
+<!-- show post -->
+{% for post in site.posts %}
+{% include article_item.html post=post %}
+{% endfor %}

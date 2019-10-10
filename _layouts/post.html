@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div id="post">
+  <div class="post-cover-image">
+    <img src="{{ page.coverImg }}" alt="">
+  </div>
+  <div class="post-description">
+    <h1 class="title">{{ page.title }}</h1>
+    <!-- dnah mucj -->
+    {% include list_category.html list_category=page.categories %}
+
+    <small>Đăng bởi
+      <a target="_blank" href="{{ site.data.about_me.facebook }}">Đỗ Minh Hiếu</a>
+      vào {{ page.date | date : "%d/%m/%Y" }}</small>
+  </div>
+  <div class="post-content">
+    {{ content }}
+  </div>
+</div>

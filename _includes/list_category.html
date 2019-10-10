@@ -1,0 +1,15 @@
+{% assign list = include.list_category %}
+
+<div class="categories">
+  <ul>
+    {% for cate in list %}
+    <li>
+      {% if cate.name  %}
+      <a href="{{cate.url}}">{{ cate.name }}</a>
+      {% else %}
+      <a href="/category/{{cate | downcase}}">{{ cate }}</a>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
